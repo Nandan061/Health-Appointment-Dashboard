@@ -14,7 +14,7 @@ const Dashboard = () => {
       try {
         const { data } = await axios.get(
           // "http://localhost:4000/api/v1/appointment/getall",
-          "/api/v1/appointment/getall"
+          "/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
